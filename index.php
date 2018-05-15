@@ -6,8 +6,7 @@
 	<body>
 		<h2>Hello World</h2>
 		<ul>
-			<?php 
-			
+			<?php			
 				for ($i = 0; $i < 10; $i ++) {
 					echo "<li> Index Number: " . $i . "</li>";
 				}
