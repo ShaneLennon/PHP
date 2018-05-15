@@ -4,7 +4,7 @@
 	</head>
 
 	<body>
-		<h2>Hello Wolrd</h2>
+		<h2>Hello World</h2>
 		<ul>
 			<?php 
 			
