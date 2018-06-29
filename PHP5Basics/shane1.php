@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>Hello</title>
+	</head>
+
+	<body>
+		<h2>Hello World</h2>
+		<ul>
+			<?php			
+				for ($i = 0; $i <= 10; $i ++) {
+					echo "<li>" . $i . "</li>";
+				}
+			?>
+        </ul>
+       </body>
+</html>
+
