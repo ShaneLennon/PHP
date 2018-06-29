@@ -1,0 +1,50 @@
+<html>
+<head>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<h2>Update Customer</h2>
+
+<form action="../controllers/CustomersController.php?action=updateCustomer" method="POST">
+    <p><input type="hidden" name="customerId" value="<?php echo $customer[0][0]?>"></p>
+    <p>First name</p>
+    
+    <p><input type="text" name="firstname" value="<?php echo $customer[0][1]?>"></p>
+
+    <p>Surname</p>
+    <p><input type="text" name="surname" value="<?php echo $customer[0][2]?>"></p>
+
+    <p>Phone number</p>
+    <p><input type="text" name="phonenumber" value="<?php echo $customer[0][3]?>"></p>
+
+    <p>Address</p>
+    <textarea name="address" rows="5" cols="50" ><?php echo $customer[0][4]?></textarea>
+
+    <p>E-mail</p>
+    <p><input type="email" name="email" value="<?php echo $customer[0][5]?>"></p>
+    
+    <p>Description</p>
+    <textarea name="description" rows="5" cols="50"><?php echo $customer[0][6]?></textarea>
+
+    <p>Recommended By</p>
+    <p><input type="text" name="recommendedBy" value="<?php echo $customer[0][7]?>"></p>
+   
+    <p>Year</p>
+    <p><input type="text" name="year" value="<?php echo $customer[0][8]?>"></p>
+
+    <p>Start Date</p>
+    <p><input type="date" name="startdate" value="<?php echo $customer[0][9]?>"></p>
+    
+    <p>Finish Date</p>
+    <p><input type="date" name="finishdate" value="<?php echo $customer[0][10]?>"></p>
+
+     <input type="submit">
+     <p>
+            <a href="../controllers/CustomersController.php?action=getAllCustomers">View all Customers</a>
+     </p>
+    
+</form>
+
+</body>
+</html>

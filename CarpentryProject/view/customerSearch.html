@@ -1,0 +1,29 @@
+<html>
+<head>
+<link rel="stylesheet" href="../css/style.css">
+    <title>Search for customers</title>
+</head>
+<body>
+    <h2>Customer Search</h2>
+
+    <form action="../controllers/CustomersController.php?action=searchForCustomer" method="post">
+	
+            <p>Enter Search Text</p>
+            <input type="text" name="search" required>
+            <select name = "select">
+                      <option value="firstname">First name</option>
+                      <option value="surname">Surname</option>
+                      <option value="phonenumber">Phone number</option>
+                      <option value="address">Address</option>
+                      <option value="description">Description</option>
+                      <option value="recommendedby">Recommended By</option>
+                      <option value="startdate">Start Date</option>
+                      <option value="finishdate">Finish Date</option>
+            </select>
+            <input type="submit" value="Search for customer">
+            <p>
+                    <a href="../controllers/CustomersController.php?action=getAllCustomers">View all Customers</a>
+            </p>
+    </form>        
+    </body>
+</html>

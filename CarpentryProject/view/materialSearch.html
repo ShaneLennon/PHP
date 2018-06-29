@@ -1,0 +1,27 @@
+<html>
+<head>
+<link rel="stylesheet" href="../css/style.css">
+    <title>Search for materials</title>
+</head>
+<body>
+    <h2>Material Search</h2>
+
+    <form action="../controllers/MaterialsController.php?action=searchForMaterial" method="post">
+	
+            <p>Enter Search Text</p>
+            <input type="text" name="search" required>
+            <select name = "select">
+                      <option value="item">Item</option>
+                      <option value="description">Description</option>
+                      <option value="unitExcl">Unit Excl.</option>
+                      <option value="totalExcl">Total Excl.</option>
+                      <option value="totalIncl">Total Incl.</option>
+                      
+            </select>
+            <input type="submit" value="Search for Material">
+            <p>
+                    <a href="../controllers/MaterialsController.php?action=getAllMaterials">View all Materials</a>
+            </p>
+    </form>          
+    </body>
+</html>

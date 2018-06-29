@@ -1,0 +1,36 @@
+<html>
+<head>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<h2>Update Material</h2>
+
+<form action="../controllers/MaterialsController.php?action=updateMaterial" method="POST">
+    <p><input type="hidden" name="materialId" value="<?php echo $material[0][0]?>"></p>
+    <p>Item</p>
+    <p><input type="text" name="item" value="<?php echo $material[0][1]?>"></p>
+
+    <p>Description</p>
+    <p>
+    <textarea name="description" rows="2" cols="50"><?php echo $material[0][2]?></textarea>   
+    </p>
+
+    <p>Unit Excl</p>
+    <p><input type="text" name="unitExcl" value="<?php echo $material[0][3]?>"></p>
+
+    <p>Total Excl</p>
+    <p><input type="text" name="totalExcl" value="<?php echo $material[0][4]?>"></p>
+
+    <p>Total Incl</p>
+    <p><input type="text" name="totalInc" value="<?php echo $material[0][5]?>" ></p>
+
+    <input type="submit">
+</form>
+    <p>
+        <a href="../controllers/MaterialsController.php?action=getAllMaterials">View all Materials</a>
+    </p>
+
+
+</body>
+</html>
